@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel form</title>
+    
+    
+</head>
+<body>
+   
+      
+
+      
+  
+    
+<header class="zoom">
+    <img src="34909.jpg">
+  </header>
+  <main role="main">
+    <div class="content">
+     <h1>Green Lantern</h1>
+     <p>Test pilot Hal Jordan went from being a novelty, the first-ever human Green Lantern, to one of the most legendary Lanterns to ever wield a power ring.
+
+        Hal Jordan’s life was changed twice by crashing aircraft. The first time was when he witnessed the death of his father, pilot Martin Jordan. The second was when, as an adult and trained pilot himself, he was summoned to the crashed wreckage of a spaceship belonging to an alien named Abin Sur. Abin explained that he was a member of the Green Lantern Corps, an organization of beings from across the cosmos, armed with power rings fueled by the green energy of all willpower in the universe. Upon his death, Abin entrusted his ring and duties as the Green Lantern of Earth’s space sector to Hal Jordan.
+        
+        Hal’s life as a Green Lantern has not been easy. He’s had to fight not only enemies, but often friends, colleagues and loved ones. But despite the strain his Green Lantern identity has put on his life, Hal is an honest man who can operate without fear, and is always willing to protect those in need—whether alone, with the Corps or alongside the Justice League and Earth’s other Super Heroes. For Hal has sworn the oath of every Green Lantern—that no evil will escape his sight.</p>
+     <h1>Cyborg</h1>
+     <p>Part man, part machine, Vic Stone is a former member of the Teen Titans and a current member of the Justice League who wrestles to preserve his humanity with every new upgrade.
+
+        Although he always exhibited a genius level intellect, young Victor Stone didn’t want a life dedicated to science and research like his parents. Instead, Vic dreamed of being a football player, and devoted all of his time to becoming a star athlete while he was still in high school. But a tragic twist of fate that should have left him dead instead found him becoming part man and part machine—a Cyborg.
+        
+        Saved by his scientist father after an accident left very little of Victor’s body intact, Dr. Silas Stone used all of his advanced scientific knowledge to save his only child’s life, and to rebuild him into a superior being, one that was arguably now more machine than man. As a cyborg, Vic was now far stronger than the average person,  could interface with computers, and emit various types of energy that made him a formidable fighter. Although he ultimately chose the path of the superhero, Victor never fully acclimated to being only partially human. He always carried a sadness within him as he mourns for the normal life he never had.
+        
+        One of the planet’s greatest heroes, Cyborg nevertheless puts all of his internal struggles aside when the time comes to save innocent lives and protect the Earth. Because of his ability to interface with computer systems, perhaps there is no hero more fitting for this modern, digital age.</p>
+      <h1>AquaMan</h1>
+      <p>The son of a lighthouse keeper and an Atlantean queen, Arthur Curry is the bridge between the surface world and his tumultuous realm of the sea.
+
+        Monarch of the undersea realm of Atlantis and King of the Seven Seas, Aquaman is one of the most powerful DC Super Heroes—commanding a kingdom that covers three-quarters of the Earth’s surface, including all the creatures contained within. Arthur Curry came from humble beginnings, as most of his life was spent exiled from his home, unaware of his noble origins. When he finally took the throne as an adult, he became the most legendary king in Atlantean history.
+        
+        A founding member of the Justice League of America, Aquaman has fought alongside Superman, Batman and Wonder Woman and held his own against the biggest threats the universe has ever seen. Despite being misunderstood by many as someone who merely “talks to fish,” Aquaman’s super-strength and fighting prowess alone make him a force to be reckoned with. His telepathic abilities make him one of the most powerful minds on the planet. If one chooses to underestimate the sea king, they do so at their own peril.</p>
+      <!-- Footer -->
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="Home page.html">Home</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+    </div>
+    
+  </main>
+  
+<style>/* --- General Pen Styles --- */
+    body{
+      font-family: Georgia, serif;
+      color: #333;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+    a{color: #000;}
+    h1{
+      font-size: 2.6rem;
+      line-height: 2.6rem;
+    }
+    .content{
+      margin: 0 auto;
+      max-width: 90%;
+      width: 720px;
+    }
+    main{
+      padding: 1% 0;
+      position: relative;
+      background: #f5f5f5;
+      box-shadow: 0px -10px 60px rgba(0,0,0,0.25);
+        height: 100%;
+    }
+    footer p{
+      font-size: .8rem;
+      font-weight: bold;
+      color: #ccc;
+    }
+    footer a{color: #ccc;}
+    /* --- Important Pen Styles --- */
+    
+    .zoom{
+      overflow: hidden;
+      padding-bottom: 55%;
+    }
+    .zoom img{
+      position: fixed;
+      top: 0%;
+      left: 50%;
+      max-width: 200%;
+      width: 100%;
+      transform: translateX(-50%);
+      /* Thanks  @bastian_fiessinger. Use when activating blur effect:
+      will-change: -webkit-filter, filter, transform; */
+    }
+    @media (max-width: 667px) {
+      h1{
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        text-align: left;
+      }
+      .content{
+        margin: 0 auto;
+        max-width: 90%;
+        width: 100%;
+        height: 100%;
+        text-align: justify;
+      }
+      .zoom{
+        overflow: hidden;
+        padding-bottom: 75%;
+      }
+    
+    }</style>  
+    <script>$(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        $(".zoom img").css({
+          transform: 'translate3d(-50%, -'+(scroll/100)+'%, 0) scale('+(100 + scroll/5)/100+')',
+          //Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
+          //"-webkit-filter": "blur(" + (scroll/200) + "px)",
+          //filter: "blur(" + (scroll/200) + "px)"
+        });
+      });</script>
+</body>
+</html>
